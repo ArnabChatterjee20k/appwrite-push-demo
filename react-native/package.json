@@ -1,0 +1,31 @@
+{
+  "name": "appwrite-push-react-native",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "expo": "~57.0.27",
+    "expo-dev-client": "~57.0.19",
+    "expo-file-system": "~57.0.7",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-appwrite": "1.2.0-rc.4",
+    "react-native-tcp-socket": "^6.4.3",
+    "react-native-url-polyfill": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "private": true,
+  "overrides": {
+    "react-native-appwrite": {
+      "expo-file-system": "$expo-file-system"
+    }
+  }
+}
